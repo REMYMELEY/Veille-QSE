@@ -1,0 +1,17 @@
+
+<!DOCTYPE html><html lang='fr'><head><meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<title>Veille QSE</title><link rel='manifest' href='manifest.json'>
+<link rel='stylesheet' href='style.css'></head>
+<body>
+<header><h1>Veille QSE</h1><button id='themeToggle'>Mode sombre</button></header>
+<div class='filters'><button data-filter=''>Toutes</button><button data-filter='Code du travail'>Code du travail</button><button data-filter='ICPE'>ICPE</button><button data-filter='ISO 9001'>ISO 9001</button><button data-filter='ISO 14001'>ISO 14001</button></div>
+<div class='search-bar'><input id='searchInput' placeholder='Rechercher...'></div>
+<section id='form-section'><h2>Ajouter une veille</h2>
+<input id='title' placeholder='Titre'>
+<select id='category'><option value=''>Choisir catégorie</option><option>Code du travail</option><option>ICPE</option><option>ISO 9001</option><option>ISO 14001</option></select>
+<input id='source' placeholder='Source (URL)'><input id='date' type='date'>
+<textarea id='summary' placeholder='Résumé'></textarea>
+<button id='addBtn'>Ajouter</button><button id='clearAll'>Vider tout</button><button id='exportPDF'>Exporter PDF</button></section>
+<section id='list-section'><h2>Veilles enregistrées</h2><div id='list'></div></section>
+<script src='jspdf.umd.min.js'></script><script src='app.js'></script></body></html>
